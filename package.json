@@ -2,6 +2,7 @@
   "name": "daily-dad",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dailydad.club",
   "dependencies": {
     "aws-amplify": "^1.1.29",
     "aws-amplify-react": "^2.3.9",
