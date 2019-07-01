@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "daily-dad-dev-20190630225613-authRole",
+            "UnauthRoleArn": "arn:aws:iam::736962281493:role/daily-dad-dev-20190630225613-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::736962281493:role/daily-dad-dev-20190630225613-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "daily-dad-dev-20190630225613-deployment",
+            "UnauthRoleName": "daily-dad-dev-20190630225613-unauthRole",
+            "StackName": "daily-dad-dev-20190630225613",
+            "StackId": "arn:aws:cloudformation:us-east-2:736962281493:stack/daily-dad-dev-20190630225613/ca1b9930-9bab-11e9-b98c-02c65bf75a14"
+        }
+    }
+}
