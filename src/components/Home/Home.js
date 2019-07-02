@@ -1,5 +1,9 @@
 import React from "react";
+import {styles} from './styles.js';
 import Button from 'react-bootstrap/Button'
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function Home(props) {
     return (
