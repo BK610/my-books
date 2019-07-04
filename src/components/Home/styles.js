@@ -1,5 +1,5 @@
 const myStyle = {
-    
+
 };
 
 export const styles = {
