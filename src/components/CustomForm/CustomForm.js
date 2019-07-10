@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
-const CustomForm = ({ status, message, onValidated }) => {
+const CustomForm = ({status, message, onValidated}) => {
     let email;
     const submit = () =>
         email &&
@@ -19,18 +19,12 @@ const CustomForm = ({ status, message, onValidated }) => {
                 display: "inline-block"
             }}
         >
-            {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+            {status === "sending" && <div>Sending...</div>}
             {status === "error" && (
-                <div
-                    style={{ color: "red" }}
-                    dangerouslySetInnerHTML={{ __html: message }}
-                />
+                <div dangerouslySetInnerHTML={{__html: message}}/>
             )}
             {status === "success" && (
-                <div
-                    style={{ color: "green" }}
-                    dangerouslySetInnerHTML={{ __html: message }}
-                />
+                <div dangerouslySetInnerHTML={{__html: message}}/>
             )}
             <input
                 ref={node => (email = node)}
