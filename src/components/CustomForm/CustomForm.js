@@ -13,7 +13,7 @@ const CustomForm = ({status, message, onValidated}) => {
     return (
         <div
             style={{
-                background: "#efefef",
+                // background: "#efefef",
                 borderRadius: 2,
                 padding: 10,
                 display: "inline-block"
@@ -31,6 +31,7 @@ const CustomForm = ({status, message, onValidated}) => {
                 type="email"
                 placeholder="Your email"
             />
+            <br/><br/>
             <Button onClick={submit}>
                 Sign Up
             </Button>
