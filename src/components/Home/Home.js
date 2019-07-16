@@ -1,6 +1,6 @@
 import React from "react";
 import {styles} from './styles';
-import CustomFormTest from '../SignUpForm/SignUpForm'
+import SignUpForm from '../SignUpForm/SignUpForm'
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,7 +9,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 
 export default function Home(props) {
     return (
-        <section>
+        <section style={styles.HomeSection}>
             <Jumbotron style={styles.Jumbotron}>
                 <Row>
                     <Col xs={12}
@@ -40,7 +40,7 @@ export default function Home(props) {
                         <MailchimpSubscribe
                             url={"https://gmail.us3.list-manage.com/subscribe/post?u=abf60d816e2f94114d163a561&amp;id=22d91fe5ec"}
                             render={({subscribe, status, message}) => (
-                                <CustomFormTest
+                                <SignUpForm
                                     status={status}
                                     message={message}
                                     onValidated={formData => subscribe(formData)}

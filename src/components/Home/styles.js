@@ -1,5 +1,11 @@
+const HomeSection = {
+    height: '90vh',
+    minHeight: "400px"
+};
+
 const Jumbotron = {
-    backgroundColor: "#ffffff"
+    backgroundColor: "#ffffff",
+    height: "100%"
 };
 
 const Logo = {
@@ -9,6 +15,7 @@ const Logo = {
 };
 
 export const styles = {
+    HomeSection: HomeSection,
     Jumbotron: Jumbotron,
     Logo: Logo
 };
