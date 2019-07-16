@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Daily Dad",
+  "name": "Daily Dad: dad jokes for your inbox",
   "icons": [
     {
       "src": "favicon.ico",
