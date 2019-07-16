@@ -1,5 +1,7 @@
 import React from 'react';
+import {styles} from './styles';
 import Button from 'react-bootstrap/Button';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 const CustomForm = ({status, message, onValidated}) => {
     let email;
@@ -32,7 +34,8 @@ const CustomForm = ({status, message, onValidated}) => {
                 placeholder="Your email"
             />
             <br/><br/>
-            <Button onClick={submit}>
+            <Button onClick={submit}
+            style={styles.Button}>
                 Sign Up
             </Button>
         </div>
