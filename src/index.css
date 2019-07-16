@@ -1,3 +1,6 @@
+/*
+  Imported fonts
+*/
 @font-face {
   font-family: "Cooper-Hewitt";
   src: local('Cooper-Hewitt'),
@@ -15,6 +18,12 @@
   font-weight: 300;
 }
 
+/*
+  Standard styling for the following tags:
+  body
+  code
+  h1, h2, h3, h4, h5, h6
+*/
 body {
   margin: 0;
   font-family: "Cooper-Hewitt", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -31,7 +40,7 @@ code {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Cooper-Hewitt";
+  font-family: "Cooper-Hewitt", sans-serif;
   font-weight: 800;
   font-style: italic;
   color: #292940;
