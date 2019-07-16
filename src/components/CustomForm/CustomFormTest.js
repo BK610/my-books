@@ -1,9 +1,11 @@
 import React from 'react';
 import {styles} from './styles';
 import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-const CustomForm = ({status, message, onValidated}) => {
+const CustomFormTest = ({status, message, onValidated}) => {
     let email;
     const submit = () =>
         email &&
@@ -13,14 +15,7 @@ const CustomForm = ({status, message, onValidated}) => {
         });
 
     return (
-        <div
-            style={{
-                // background: "#efefef",
-                borderRadius: 2,
-                padding: 10,
-                display: "inline-block"
-            }}
-        >
+        <div>
             {status === "sending" && <div>Sending...</div>}
             {status === "error" && (
                 <div dangerouslySetInnerHTML={{__html: message}}/>
@@ -28,18 +23,31 @@ const CustomForm = ({status, message, onValidated}) => {
             {status === "success" && (
                 <div dangerouslySetInnerHTML={{__html: message}}/>
             )}
-            <input
-                ref={node => (email = node)}
-                type="email"
-                placeholder="Your email"
-            />
-            <br/><br/>
-            <Button onClick={submit}
-            style={styles.Button}>
-                Sign Up
-            </Button>
+            <Form>
+                <Row>
+                    <Col xs={12}
+                         sm={6}
+                         md={4}
+                         lg={3}>
+                        <Form.Group controlId="formEmail">
+                            <Form.Control
+                                ref={node => (email = node)}
+                                type="email"
+                                placeholder="Sign up here"
+                            />
+                        </Form.Group>
+                    </Col>
+                    <Col xs={true}
+                         sm={3}>
+                        <Button onClick={submit}
+                                style={styles.Button}>
+                            Submit
+                        </Button>
+                    </Col>
+                </Row>
+            </Form>
         </div>
     );
 };
 
-export default CustomForm;
+export default CustomFormTest;

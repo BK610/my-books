@@ -1,7 +1,14 @@
 const Jumbotron = {
+    backgroundColor: "#ffffff"
+};
 
+const Logo = {
+    textAlign: 'center',
+    maxWidth: '100%',
+    maxHeight: "100vh",
 };
 
 export const styles = {
-    myStyle: myStyle
+    Jumbotron: Jumbotron,
+    Logo: Logo
 };
