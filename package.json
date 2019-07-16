@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://dailydad.club",
   "dependencies": {
-    "aws-amplify": "^1.1.29",
-    "aws-amplify-react": "^2.3.9",
+    "aws-amplify": "^1.1.30",
+    "aws-amplify-react": "^2.3.10",
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
