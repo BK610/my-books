@@ -11,7 +11,6 @@ class App extends React.Component {
 
     render() {
         return (
-            <Container>
                 <Router>
                     <Route
                         path="/"
@@ -21,7 +20,7 @@ class App extends React.Component {
                         )}
                     />
                 </Router>
-            </Container>
+            // </Container>
         );
     }
 }

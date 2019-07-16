@@ -5,10 +5,14 @@ import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Logo from '../../lib/img/daily-dad.png';
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 export default function Home(props) {
     return (
-        <div>
+        <section>
+            <Jumbotron>
+                Big Jumbo
+            </Jumbotron>
             <Row id={'rowDailyDad'}>
                 <Col></Col>
                 <Col>
@@ -35,6 +39,6 @@ export default function Home(props) {
                 </Col>
                 <Col></Col>
             </Row>
-        </div>
+        </section>
     )
 }
