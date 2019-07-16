@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import Container from 'react-bootstrap/Container'
 import HomeContainer from "./components/Home/index";
+import FooterContainer from "./components/Footer";
 
 class App extends React.Component {
     constructor(props) {
@@ -19,8 +19,13 @@ class App extends React.Component {
                             <HomeContainer {...props}/>
                         )}
                     />
+                    <Route
+                        path="/"
+                        render={(props) => (
+                            <FooterContainer {...props}/>
+                        )}
+                            />
                 </Router>
-            // </Container>
         );
     }
 }
