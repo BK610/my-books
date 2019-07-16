@@ -26,9 +26,8 @@ const SignUpForm = ({status, message, onValidated}) => {
             <Form>
                 <Row>
                     <Col xs={12}
-                         sm={6}
-                         md={4}
-                         lg={3}>
+                         sm={{span: 4, offset: 2}}
+                         lg={{span: 3, offset: 3}}>
                         <Form.Group controlId="formEmail">
                             <Form.Control
                                 ref={node => (email = node)}

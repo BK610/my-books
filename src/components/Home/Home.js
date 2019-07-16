@@ -13,10 +13,8 @@ export default function Home(props) {
             <Jumbotron style={styles.Jumbotron}>
                 <Row>
                     <Col xs={12}
-                         sm={{span: 10, offset: 1}}
-                         md={{span: 8, offset: 2}}
-                         lg={{span: 6, offset: 3}}
-                         xl={{span: 4, offset: 4}}>
+                         sm={{span: 8, offset: 2}}
+                         lg={{span: 6, offset: 3}}>
                         <img style={styles.Logo}
                              src={Logo}
                              title={'Daily Dad'}
@@ -26,7 +24,9 @@ export default function Home(props) {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col xs={12}
+                         sm={{span: 8, offset: 2}}
+                         lg={{span: 6, offset: 3}}>
                         <h4>
                             Think your dad's funny?
                         </h4>
