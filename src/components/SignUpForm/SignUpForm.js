@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const CustomFormTest = ({status, message, onValidated}) => {
+const SignUpForm = ({status, message, onValidated}) => {
     let email;
     const submit = () =>
         email &&
@@ -50,4 +50,4 @@ const CustomFormTest = ({status, message, onValidated}) => {
     );
 };
 
-export default CustomFormTest;
+export default SignUpForm;

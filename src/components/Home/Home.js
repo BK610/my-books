@@ -1,6 +1,6 @@
 import React from "react";
 import {styles} from './styles';
-import CustomFormTest from '../CustomForm/CustomFormTest'
+import CustomFormTest from '../SignUpForm/SignUpForm'
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
