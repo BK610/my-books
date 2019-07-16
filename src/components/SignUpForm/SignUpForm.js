@@ -30,9 +30,11 @@ const SignUpForm = ({status, message, onValidated}) => {
                          lg={{span: 3, offset: 3}}>
                         <Form.Group controlId="formEmail">
                             <Form.Control
+                                style={styles.Input}
                                 ref={node => (email = node)}
                                 type="email"
-                                placeholder="Sign up here"
+                                label="abc"
+                                placeholder="Your email here"
                             />
                         </Form.Group>
                     </Col>

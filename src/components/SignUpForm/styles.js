@@ -3,6 +3,12 @@ const Button = {
     borderColor: "#5abbc4"
 };
 
+const Input = {
+    backgroundColor: "#E9ECEF",
+    color: "#292940"
+};
+
 export const styles = {
-    Button: Button
+    Button: Button,
+    Input: Input
 };
