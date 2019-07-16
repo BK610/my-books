@@ -11,11 +11,12 @@ export default function Home(props) {
     return (
         <section>
             <Jumbotron style={styles.Jumbotron}>
-                <Row id={'rowDailyDad'}>
-                    <Col xs={1}
-                         lg={3}></Col>
-                    <Col xs={10}
-                         lg={6}>
+                <Row>
+                    <Col xs={12}
+                         sm={{span: 10, offset: 1}}
+                         md={{span: 8, offset: 2}}
+                         lg={{span: 6, offset: 3}}
+                         xl={{span: 4, offset: 4}}>
                         <img style={styles.Logo}
                              src={Logo}
                              title={'Daily Dad'}
@@ -23,8 +24,6 @@ export default function Home(props) {
                         <br/>
                         <br/>
                     </Col>
-                    <Col xs={1}
-                         lg={3}></Col>
                 </Row>
                 <Row>
                     <Col>
@@ -49,16 +48,6 @@ export default function Home(props) {
                             )}/>
                     </Col>
                 </Row>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <h1>Heading 1</h1>
-                <h2>Heading 2</h2>
-                <h3>Heading 3</h3>
-                <h4>Heading 4</h4>
-                <h5>Heading 5</h5>
-                <h6>Heading 6</h6>
             </Jumbotron>
         </section>
     )
