@@ -18,7 +18,7 @@ export default function Home(props) {
                         <img style={styles.Logo}
                              src={Logo}
                              title={'Daily Dad'}
-                             alt={'fail'}/>
+                             alt={'Daily Dad logo'}/>
                         <br/>
                         <br/>
                     </Col>
