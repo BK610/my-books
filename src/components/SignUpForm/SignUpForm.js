@@ -7,24 +7,19 @@ import Col from 'react-bootstrap/Col';
 
 const SignUpForm = ({status, message, onValidated}) => {
     let email;
-    const submit = () =>
+
+    const submit = event => {
+        event.preventDefault();
         email &&
-        email.value.indexOf("@") > -1 &&
         onValidated({
             EMAIL: email.value
         });
+    };
 
     return (
         <div>
-            {status === "sending" && <div>Sending...</div>}
-            {status === "error" && (
-                <div dangerouslySetInnerHTML={{__html: message}}/>
-            )}
-            {status === "success" && (
-                <div dangerouslySetInnerHTML={{__html: message}}/>
-            )}
-            <Form>
-                <Row>
+            <Form onSubmit={submit}>
+                <Form.Row>
                     <Col xs={12}
                          sm={{span: 4, offset: 2}}
                          lg={{span: 3, offset: 3}}>
@@ -32,18 +27,31 @@ const SignUpForm = ({status, message, onValidated}) => {
                             <Form.Control
                                 style={styles.Input}
                                 ref={node => (email = node)}
+                                required
                                 type="email"
-                                label="abc"
+                                name="email"
                                 placeholder="Your email here"
                             />
                         </Form.Group>
                     </Col>
                     <Col xs={true}
                          sm={3}>
-                        <Button onClick={submit}
+                        <Button type="submit"
                                 style={styles.Button}>
                             Submit
                         </Button>
+                    </Col>
+                </Form.Row>
+                <Row>
+                    <Col xs={12}
+                         sm={{span: 8, offset: 2}}
+                         lg={{span: 6, offset: 3}}>
+                        {status === "error" && (
+                            <div dangerouslySetInnerHTML={{__html: message}}/>
+                        )}
+                        {status === "success" && (
+                            <div dangerouslySetInnerHTML={{__html: message}}/>
+                        )}
                     </Col>
                 </Row>
             </Form>
