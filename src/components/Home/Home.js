@@ -2,14 +2,19 @@ import React from "react";
 import {styles} from './styles';
 import SignUpForm from '../SignUpForm/SignUpForm'
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Logo from '../../lib/img/daily-dad.png';
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import {
+    Div,
+    Row,
+    Col
+} from 'atomize';
+import Logo from '../../lib/img/daily-dad.png';
 
 export default function Home(props) {
     return (
-        <section style={styles.HomeSection}>
+        <Div style={styles.HomeSection}>
             <Jumbotron style={styles.Jumbotron}>
                 <Row>
                     <Col xs={12}
@@ -49,6 +54,6 @@ export default function Home(props) {
                     </Col>
                 </Row>
             </Jumbotron>
-        </section>
+        </Div>
     )
 }
