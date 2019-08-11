@@ -43,7 +43,7 @@ const SignUpForm = ({status, message, onValidated}) => {
                     }}
                     >
                         <Input
-                            bg="white"
+                            bg="inputGray"
                             shadow="2"
                             focusShadow="3"
                             type="email"
@@ -68,6 +68,7 @@ const SignUpForm = ({status, message, onValidated}) => {
                     }}
                     >
                         <Button
+                            bg="brandTeal"
                             shadow="2"
                             hoverShadow="3"
                         >
