@@ -1,33 +1,43 @@
 import React from 'react';
 import {styles} from './styles';
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import {
+    Container,
+    Row,
+    Col,
+    Text,
+    Anchor
+} from 'atomize';
 
 export default function Footer(props) {
     return (
         <section style={styles.FooterSection}>
-            <Container style={styles.Container}>
-                <Row style={styles.Row}>
+            <Container h={"100%"}
+                // minH={"50px"}
+                //        textColor={"white"}
+            >
+                <Row h={"100%"}>
                     <Col>
-                        <p style={styles.Text}>
+                        <Text textSize={"body"}
+                              pos={"absolute"}
+                              top={"50%"}
+                              left={"50%"}
+                              transform={"translate(-50%, -50%)"}
+                        >
                             Made with&nbsp;❤&nbsp;by&nbsp;
-                            <strong>
-                                <a style={styles.Link}
-                                   href={'https://www.linkedin.com/in/minaiskarous/'}
-                                   target={'_blank'}>
-                                    Mina
-                                </a>
-                            </strong>
+                            <Anchor textColor={"white"}
+                                    hoverTextColor={"white"}
+                                    href={'https://www.linkedin.com/in/minaiskarous/'}
+                                    target={'_blank'}>
+                                Mina
+                            </Anchor>
                             &nbsp;and&nbsp;
-                            <strong>
-                                <a style={styles.Link}
-                                   href={'https://www.linkedin.com/in/baileykane/'}
-                                   target={'_blank'}>
-                                    Bailey
-                                </a>
-                            </strong>
-                        </p>
+                            <Anchor textColor={"white"}
+                                    hoverTextColor={"white"}
+                                    href={'https://www.linkedin.com/in/baileykane/'}
+                                    target={'_blank'}>
+                                Bailey
+                            </Anchor>
+                        </Text>
                     </Col>
                 </Row>
             </Container>
