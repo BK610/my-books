@@ -4,15 +4,19 @@
   "private": true,
   "homepage": "https://dailydad.club",
   "dependencies": {
-    "aws-amplify": "^1.1.30",
-    "aws-amplify-react": "^2.3.10",
+    "@callstack/react-theme-provider": "^3.0.3",
+    "atomize": "^1.0.6",
+    "aws-amplify": "^1.1.36",
+    "aws-amplify-react": "^2.3.12",
     "bootstrap": "^4.3.1",
-    "react": "^16.8.6",
-    "react-bootstrap": "^1.0.0-beta.9",
-    "react-dom": "^16.8.6",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.11",
+    "react-dom": "^16.9.0",
     "react-mailchimp-subscribe": "^2.1.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-transition-group": "^4.2.2",
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

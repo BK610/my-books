@@ -1,54 +1,81 @@
 import React from "react";
-import {styles} from './styles';
 import SignUpForm from '../SignUpForm/SignUpForm'
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import {
+    Div,
+    Row,
+    Col,
+    Image,
+    Text
+} from 'atomize';
 import Logo from '../../lib/img/daily-dad.png';
-import Jumbotron from "react-bootstrap/Jumbotron";
 
 export default function Home(props) {
     return (
-        <section style={styles.HomeSection}>
-            <Jumbotron style={styles.Jumbotron}>
-                <Row>
-                    <Col xs={12}
-                         sm={{span: 8, offset: 2}}
-                         lg={{span: 6, offset: 3}}>
-                        <img style={styles.Logo}
-                             src={Logo}
-                             title={'Daily Dad'}
-                             alt={'Daily Dad logo'}/>
-                        <br/>
-                        <br/>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col xs={12}
-                         sm={{span: 8, offset: 2}}
-                         lg={{span: 6, offset: 3}}>
-                        <h4>
-                            Think your dad's funny?
-                        </h4>
-                        <p>
-                            Tell him he has competition.
-                        </p>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <MailchimpSubscribe
-                            url={"https://gmail.us3.list-manage.com/subscribe/post?u=abf60d816e2f94114d163a561&amp;id=22d91fe5ec"}
-                            render={({subscribe, status, message}) => (
-                                <SignUpForm
-                                    status={status}
-                                    message={message}
-                                    onValidated={formData => subscribe(formData)}
-                                />
-                            )}/>
-                    </Col>
-                </Row>
-            </Jumbotron>
-        </section>
+        <Div h="90vh"
+             minH="400px"
+             p={{
+                 y: "2rem",
+                 x: "1rem"
+             }}>
+            <Row>
+                <Col size={{
+                    xs: 0,
+                    sm: 2,
+                    lg: 3
+                }}
+                ></Col>
+                <Col size={{
+                    xs: 12,
+                    sm: 8,
+                    lg: 6
+                }}
+                >
+                    <Image maxW="100%"
+                           maxH="100vh"
+                           src={Logo}
+                           title={'Daily Dad'}
+                           alt={'Daily Dad logo'}/>
+                    <br/>
+                    <br/>
+                </Col>
+            </Row>
+            <Row>
+                <Col size={{
+                    xs: 0,
+                    sm: 2,
+                    lg: 3
+                }}></Col>
+                <Col size={{
+                    xs: 12,
+                    sm: 8,
+                    lg: 6
+                }}
+                >
+                    <Text tag="h4"
+                          textSize={"heading"}>
+                        Think your dad's funny?
+                    </Text>
+                    <Text tag="p"
+                          textSize={"subheader"}
+                          textColor={"brandNavy"}>
+                        Tell him he has competition.
+                    </Text>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <MailchimpSubscribe
+                        url={"https://gmail.us3.list-manage.com/subscribe/post?u=abf60d816e2f94114d163a561&amp;id=22d91fe5ec"}
+                        render={({subscribe, status, message}) => (
+                            <SignUpForm
+                                status={status}
+                                message={message}
+                                onValidated={formData => subscribe(formData)}
+                            />
+                        )}/>
+                </Col>
+            </Row>
+        </Div>
     )
 }

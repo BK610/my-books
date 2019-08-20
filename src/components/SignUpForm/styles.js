@@ -1,14 +1,16 @@
 const Button = {
     backgroundColor: "#5abbc4",
-    borderColor: "#5abbc4"
+    borderColor: "#5abbc4",
+    shadow: "2",
+    hoverShadow: "3"
 };
 
 const Input = {
-    backgroundColor: "#E9ECEF",
-    color: "#292940"
+    bg: "white",
+    shadow: "2"
 };
 
 export const styles = {
     Button: Button,
-    Input: Input
+    Input2: Input
 };
