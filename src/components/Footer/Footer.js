@@ -1,6 +1,6 @@
 import React from 'react';
-import {styles} from './styles';
 import {
+    Div,
     Container,
     Row,
     Col,
@@ -10,9 +10,11 @@ import {
 
 export default function Footer(props) {
     return (
-        <section style={styles.FooterSection}>
+        <Div tag={"section"}
+             bg={"brandNavy"}
+             h={"10vh"}
+             minH={"50px"}>
             <Container h={"100%"}
-                       //minH={"50px"}
                        textColor={"white"}
             >
                 <Row h={"100%"}>
@@ -41,6 +43,6 @@ export default function Footer(props) {
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </Div>
     )
 }
