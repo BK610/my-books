@@ -25,14 +25,14 @@ export default function Footer(props) {
                         >
                             Made with&nbsp;❤&nbsp;by&nbsp;
                             <Anchor textColor={"white"}
-                                    hoverTextColor={"white"}
+                                    hoverTextColor={"brandTeal"}
                                     href={'https://www.linkedin.com/in/minaiskarous/'}
                                     target={'_blank'}>
                                 Mina
                             </Anchor>
                             &nbsp;and&nbsp;
                             <Anchor textColor={"white"}
-                                    hoverTextColor={"white"}
+                                    hoverTextColor={"brandTeal"}
                                     href={'https://www.linkedin.com/in/baileykane/'}
                                     target={'_blank'}>
                                 Bailey
