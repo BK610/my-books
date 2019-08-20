@@ -17,7 +17,7 @@ export default function Footer(props) {
             >
                 <Row h={"100%"}>
                     <Col d={"flex"}>
-                        <Text textSize={"body"}
+                        <Text textSize={"subheader"}
                               d={"flex"}
                               w={"100%"}
                               align={"center"}
