@@ -82,22 +82,22 @@ class SignUpForm extends React.Component {
                             sm: 3
                         }}
                         >
-                            {/*<Button*/}
-                            {/*    bg="brandTeal"*/}
-                            {/*    hoverBg="brandTeal"*/}
-                            {/*    shadow="2"*/}
-                            {/*    hoverShadow="3"*/}
-                            {/*    rounded="circle"*/}
-                            {/*    m={{r: "1rem"}}*/}
-                            {/*    h={"2.5rem"}*/}
-                            {/*    w={"2.5rem"}*/}
-                            {/*>*/}
-                            {/*    <Icon name={"Email"}*/}
-                            {/*    color={"white"}/>*/}
-                            {/*    /!*<Text style={{fontSize: "16px"}}>*!/*/}
-                            {/*    /!*    Submit*!/*/}
-                            {/*    /!*</Text>*!/*/}
-                            {/*</Button>*/}
+                            <Button
+                                bg="brandTeal"
+                                hoverBg="brandTeal"
+                                shadow="2"
+                                hoverShadow="3"
+                                // rounded="circle"
+                                // m={{r: "1rem"}}
+                                // h={"2.5rem"}
+                                // w={"2.5rem"}
+                            >
+                                {/*<Icon name={"Email"}*/}
+                                {/*color={"white"}/>*/}
+                                <Text style={{fontSize: "16px"}}>
+                                    Submit
+                                </Text>
+                            </Button>
                         </Col>
                     </Row>
                     <Row>

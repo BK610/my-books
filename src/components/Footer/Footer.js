@@ -12,16 +12,16 @@ export default function Footer(props) {
     return (
         <section style={styles.FooterSection}>
             <Container h={"100%"}
-                // minH={"50px"}
-                //        textColor={"white"}
+                       //minH={"50px"}
+                       textColor={"white"}
             >
                 <Row h={"100%"}>
-                    <Col>
+                    <Col d={"flex"}>
                         <Text textSize={"body"}
-                              pos={"absolute"}
-                              top={"50%"}
-                              left={"50%"}
-                              transform={"translate(-50%, -50%)"}
+                              d={"flex"}
+                              w={"100%"}
+                              align={"center"}
+                              justify={"center"}
                         >
                             Made with&nbsp;❤&nbsp;by&nbsp;
                             <Anchor textColor={"white"}
