@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import HomeContainer from "./components/Home/index";
+import NavBarContainer from "./components/NavBar/index";
+import MainContainer from "./components/Main";
 import FooterContainer from "./components/Footer";
 
 class App extends React.Component {
@@ -13,9 +14,14 @@ class App extends React.Component {
                 <Router>
                     <Route
                         path="/"
-                        exact
                         render={(props) => (
-                            <HomeContainer {...props}/>
+                            <NavBarContainer {...props}/>
+                        )}
+                    />
+                    <Route
+                        path={"/"}
+                        render={(props) => (
+                            <MainContainer {...props}/>
                         )}
                     />
                     <Route

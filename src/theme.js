@@ -4,12 +4,16 @@ export const theme = {
     ...DefaultTheme,
     fontFamily: {
         ...DefaultTheme.fontFamily,
-        primary: "Cooper-Hewitt"
+        //TODO: Pick a new primary font. Again, terrible.
+        primary: "Montserrat",
+        secondary: "Alegreya"
     },
     colors: {
         ...DefaultTheme.colors,
-        inputGray: "#E9ECEF",
-        brandNavy: "#29293E",
-        brandTeal: "#5ABBC4"
+        brandLight: "#EFEEED",
+        brandLightAccent: "#98898C",
+        brandMain: "#5213AF",
+        brandDark: "#252434",
+        brandDarkAccent: "#FB7373"
     }
 };

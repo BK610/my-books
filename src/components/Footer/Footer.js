@@ -11,11 +11,11 @@ import {
 export default function Footer(props) {
     return (
         <Div tag={"section"}
-             bg={"brandNavy"}
-             h={"10vh"}
+             bg={"brandMain"}
+             h={"5vh"}
              minH={"50px"}>
             <Container h={"100%"}
-                       textColor={"white"}
+                       textColor={"brandLight"}
             >
                 <Row h={"100%"}>
                     <Col d={"flex"}>
@@ -26,15 +26,8 @@ export default function Footer(props) {
                               justify={"center"}
                         >
                             Made with&nbsp;❤&nbsp;by&nbsp;
-                            <Anchor textColor={"white"}
-                                    hoverTextColor={"brandTeal"}
-                                    href={'https://www.linkedin.com/in/minaiskarous/'}
-                                    target={'_blank'}>
-                                Mina
-                            </Anchor>
-                            &nbsp;and&nbsp;
-                            <Anchor textColor={"white"}
-                                    hoverTextColor={"brandTeal"}
+                            <Anchor textColor={"brandLight"}
+                                    hoverTextColor={"brandDarkAccent"}
                                     href={'https://www.linkedin.com/in/baileykane/'}
                                     target={'_blank'}>
                                 Bailey
