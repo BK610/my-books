@@ -1,9 +1,12 @@
 import React from "react";
 import {
     Div,
-    Container
+    Container,
+    Row,
+    Col
 } from 'atomize';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import SideBarContainer from '../SideBar';
 
 export default function Main(props) {
     return (
@@ -12,18 +15,25 @@ export default function Main(props) {
         // Currently, it's just different searches.
         <Div>
             <Container>
-                <Route
-                    path={'/mybooks'}
-                    exact
-                />
-                <Route
-                    path={'/favorites'}
-                    exact
-                />
-                <Route
-                    path={'/toread'}
-                    exact
-                />
+                <Row>
+                    <Col>
+                        <Route
+                            path={'/mybooks'}
+                            exact
+                            render={(props) => (
+                                <SideBarContainer {...props}/>
+                            )}
+                        />
+                    </Col>
+                    <Route
+                        path={'/favorites'}
+                        exact
+                    />
+                    <Route
+                        path={'/toread'}
+                        exact
+                    />
+                </Row>
             </Container>
         </Div>
     )

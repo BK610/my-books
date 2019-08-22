@@ -20,6 +20,7 @@ export default function Footer(props) {
                 <Row h={"100%"}>
                     <Col d={"flex"}>
                         <Text textSize={"subheader"}
+                              fontFamily={"secondary"}
                               d={"flex"}
                               w={"100%"}
                               align={"center"}

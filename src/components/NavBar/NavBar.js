@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import {
     Div,
     Container,
@@ -8,53 +9,69 @@ import {
     Anchor
 } from 'atomize';
 
-export default function NavBar(props) {
-    return (
-        //TODO: These links make no sense. Decide what they should actually be
-        <Div
-            p={{
-                y: "1rem"
-            }}
-        >
-            <Container>
-                <Row
-                    fontFamily={"secondary"}
-                >
-                    <Col>
-                        <Anchor textColor={"brandDark"}
-                                hoverTextColor={"brandDarkAccent"}>
-                            <Text
-                                textSize={"title"}
-                                textAlign={"left"}
+export default class NavBar extends React.Component {
+    constructor(props) {
+        super(props);
+
+    }
+
+    render() {
+        return (
+            //TODO: These links make no sense. Decide what they should actually be
+            <Div
+                p={{
+                    y: "1rem"
+                }}
+            >
+                <Container>
+                    <Row
+                        fontFamily={"secondary"}
+                    >
+                        <Col>
+                            <Link
+                                to={"/mybooks"}
                             >
-                                My Books
-                            </Text>
-                        </Anchor>
-                    </Col>
-                    <Col>
-                        <Anchor textColor={"brandDark"}
-                                hoverTextColor={"brandDarkAccent"}>
-                            <Text
-                                textSize={"title"}
-                                textAlign={"center"}
+                                <Text
+                                    textColor={"brandDark"}
+                                    hoverTextColor={"brandDarkAccent"}
+                                    textSize={"title"}
+                                    textAlign={"left"}
+                                >
+                                    My Books
+                                </Text>
+                            </Link>
+                        </Col>
+                        <Col>
+                            <Link
+                                to={"/favorites"}
                             >
-                                Favorites
-                            </Text>
-                        </Anchor>
-                    </Col>
-                    <Col>
-                        <Anchor textColor={"brandDark"}
-                                hoverTextColor={"brandDarkAccent"}>
-                            <Text
-                                textSize={"title"}
-                                textAlign={"right"}
+                                <Text
+                                    textColor={"brandDark"}
+                                    hoverTextColor={"brandDarkAccent"}
+                                    textSize={"title"}
+                                    textAlign={"center"}
+                                >
+                                    Favorites
+                                </Text>
+                            </Link>
+                        </Col>
+                        <Col>
+                            <Link
+                                to={"/random"}
                             >
-                                To Read
-                            </Text>
-                        </Anchor>
-                    </Col>
-                </Row>
-            </Container>
-        </Div>
-    )
-}
+                                <Text
+                                    textColor={"brandDark"}
+                                    hoverTextColor={"brandDarkAccent"}
+                                    textSize={"title"}
+                                    textAlign={"right"}
+                                >
+                                    Random Book
+                                </Text>
+                            </Link>
+                        </Col>
+                    </Row>
+                </Container>
+                < /Div>
+                    )
+                    }
+                    }
