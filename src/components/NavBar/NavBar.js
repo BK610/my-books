@@ -71,7 +71,7 @@ export default class NavBar extends React.Component {
                         </Col>
                     </Row>
                 </Container>
-                < /Div>
-                    )
-                    }
-                    }
+            </Div>
+        )
+    }
+}
