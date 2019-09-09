@@ -7,6 +7,7 @@ export default function SideBar(props) {
     return (
         <Div>
             SideBar
+            Text text TExt
         </Div>
     )
 }

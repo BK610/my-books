@@ -5,7 +5,7 @@ export const theme = {
     fontFamily: {
         ...DefaultTheme.fontFamily,
         //TODO: Pick a new primary font. Again, terrible.
-        primary: "Montserrat",
+        primary: "Alegreya Sans",
         secondary: "Alegreya"
     },
     colors: {
